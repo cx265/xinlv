@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>心旅</title>
+		<link rel="shortcut icon" href="images/ico.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+				font-family: "微软雅黑";
+			}
+			
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+			}
+			
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: #efeff4;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 4px 10px #bbb;
+				overflow: hidden;
+			}
+			
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				margin: 0;
+			}
+			
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+			
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #efeff4;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				box-shadow: 0 4px 10px #bbb;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: #efeff4;
+			}
+			
+			.mui-navigate-right:after,
+			.mui-push-right:after {
+				right: 15px;
+				content: '\e403';
+			}
+			.mui-slider .mui-slider-group .mui-slider-item .mui-table-view .mui-table-view-cell .mui-navigate-right{
+				font-size: 34px;
+			}
+			.mui-slider .mui-slider-group .mui-slider-item .mui-table-view .mui-table-view-cell .mui-navigate-right .mui-media-body{
+				font-size: 14px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">工具下载</h1>
+			<a id="menu" class="mui-action-menu mui-icon mui-icon-bars mui-pull-right" href="#topPopover"></a>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							学习工具
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							社交工具
+						</a>
+						<a class="mui-control-item" href="#item3mobile">
+							其他工具
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view mui-table-view-chevron cx1">
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/appsearch_AndroidPhonev_1066013.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="1" src="images/d1/d1.jpg">
+											<div class="mui-media-body">『考研帮』
+												<p class="mui-ellipsis">中国领先的考研交流平台和研究生招生信息网络发布平台。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="2" src="images/d1/d2.jpg">
+											<div class="mui-media-body">『粉笔考研』
+												<p class="mui-ellipsis">最前的考研题库软件！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/appsearch_AndroidPhonev_1066013.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="3" src="images/d1/d3.jpg">
+											<div class="mui-media-body">『日语学习工具』
+												<p class="mui-ellipsis">学习日语的应用程序。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="4" src="images/d1/d4.jpg">
+											<div class="mui-media-body">『英语老师(新概念英语学习软件)』
+												<p class="mui-ellipsis">新概念英语学习软件！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/appsearch_AndroidPhonev_1066013.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="5" src="images/d1/d5.jpg">
+											<div class="mui-media-body">『C/C++程序设计学习与实验系统』
+												<p class="mui-ellipsis">C/C++学习编程的好软件。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="6" src="images/d1/d6.jpg">
+											<div class="mui-media-body">『汉语拼音学习软件』
+												<p class="mui-ellipsis">会使用鼠标的孩子可自行学习！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/appsearch_AndroidPhonev_1066013.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="7" src="images/d1/d7.jpg">
+											<div class="mui-media-body">『藏文发音学习软件』
+												<p class="mui-ellipsis">学习藏文不是问题。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="8" src="images/d1/d8.jpg">
+											<div class="mui-media-body">『考研-每日一题（1）』
+												<p class="mui-ellipsis">真题再现，考研无忧！</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view mui-table-view-chevron cx2">
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/appsearch_AndroidPhonev_1066013.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="1" src="images/e1/e1.jpg">
+											<div class="mui-media-body">『来往』
+												<p class="mui-ellipsis">阿里巴巴正式发布移动好友互动平台。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="2" src="images/e1/e2.jpg">
+											<div class="mui-media-body">『比邻』
+												<p class="mui-ellipsis">一款电话社交平台APP。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/appsearch_AndroidPhonev_1066013.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="3" src="images/e1/e3.jpg">
+											<div class="mui-media-body">『陌陌』
+												<p class="mui-ellipsis">基于地理位置的移动社交工具。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="4" src="images/e1/e4.jpg">
+											<div class="mui-media-body">『敢聊』
+												<p class="mui-ellipsis">社交手机客户端。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/appsearch_AndroidPhonev_1066013.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="5" src="images/e1/e5.jpg">
+											<div class="mui-media-body">『无秘』
+												<p class="mui-ellipsis">无秘是国内最大也是最多人玩的匿名社交应用。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="6" src="images/e1/e6.jpg">
+											<div class="mui-media-body">『私密达』
+												<p class="mui-ellipsis">“私密达”是一款客户端通讯软件！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/appsearch_AndroidPhonev_1066013.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="7" src="images/e1/e7.jpg">
+											<div class="mui-media-body">『米聊』
+												<p class="mui-ellipsis">米聊是小米科技出品的一款支持跨手机操作系统平台。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="8" src="images/e1/e8.jpg">
+											<div class="mui-media-body">『群聊吧（1）』
+												<p class="mui-ellipsis">聚合志同道合者的互动平台！</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view mui-table-view-chevron cx3">
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/appsearch_AndroidPhonev_1066013.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="3" src="images/d1/d3.jpg">
+											<div class="mui-media-body">『日语学习工具』
+												<p class="mui-ellipsis">学习日语的应用程序。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="6" src="images/e1/e6.jpg">
+											<div class="mui-media-body">『私密达』
+												<p class="mui-ellipsis">“私密达”是一款客户端通讯软件！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="6" src="images/f1/f3.jpg">
+											<div class="mui-media-body">『按键精灵』
+												<p class="mui-ellipsis">电脑按键辅助软件！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="2" src="images/e1/e2.jpg">
+											<div class="mui-media-body">『比邻』
+												<p class="mui-ellipsis">一款电话社交平台APP。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="2" src="images/f1/f5.jpg">
+											<div class="mui-media-body">『简单百宝箱』
+												<p class="mui-ellipsis">网络游戏的辅助软件。</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="6" src="images/d1/d6.jpg">
+											<div class="mui-media-body">『汉语拼音学习软件』
+												<p class="mui-ellipsis">会使用鼠标的孩子可自行学习！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="6" src="images/f1/f7.jpg">
+											<div class="mui-media-body">『炉石百宝箱』
+												<p class="mui-ellipsis">炉石传说辅助软件！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="6" src="images/f1/f8.jpg">
+											<div class="mui-media-body">『兔子助手』
+												<p class="mui-ellipsis">基于苹果系统的软件！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="unpackage/res/YO-v203123.apk" class="mui-navigate-right"><img class="mui-media-object mui-pull-left" data-lazyload-id="6" src="images/f1/f9.jpg">
+											<div class="mui-media-body">『91助手』
+												<p class="mui-ellipsis">手机App辅助软件！</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.pullToRefresh.js"></script>
+		<script src="js/mui.pullToRefresh.material.js"></script>
+		<script>
+			mui.init();
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios ? 0.003 : 0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration: deceleration
+				});
+				$.ready(function() {
+					//循环初始化所有下拉刷新，上拉加载。
+					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+						$(pullRefreshEl).pullToRefresh({
+//							down: {
+//								callback: function() {
+//									var self = this;
+//									setTimeout(function() {
+//										var ul = self.element.querySelector('.mui-table-view');
+//										ul.insertBefore(createFragment(ul, index, 10, true), ul.firstChild);
+//										self.endPullDownToRefresh();
+//									}, 1000);
+//								}
+//							},
+							up: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view');
+										ul.appendChild(createFragment(ul, index, 5));
+										self.endPullUpToRefresh();
+									}, 1000);
+								}
+							}
+						});
+					});
+					var createFragment = function(ul, index, count, reverse) {
+						if (ul.className == 'mui-table-view mui-table-view-chevron cx1'){
+							count = 3;
+							var length = ul.querySelectorAll('li').length - 7;
+							var fragment = document.createDocumentFragment();
+							var li;
+							for (var i = 0; i < count; i++) {
+								li = document.createElement('li');
+								li.className = 'mui-table-view-cell mui-media';
+								a = document.createElement('a');
+								a.href = 'unpackage/res/YO-v203123.apk';
+								a.className = 'mui-navigate-right';
+								img = document.createElement('img');
+								img.className = 'mui-media-object mui-pull-left';
+								img.src = 'images/d1/d8.jpg';
+								div = document.createElement('div');
+								div.className = 'mui-media-body';
+								div.innerHTML = '『考研-每日一题（'+ (length + (reverse ? (count - i) : (i + 1)))+'）』';
+								p = document.createElement('p');
+								p.className = 'mui-ellipsis';
+								p.innerHTML = '真题再现，考研无忧！';
+								div.appendChild(p);
+								a.appendChild(img);
+								a.appendChild(div);
+								li.appendChild(a);
+								fragment.appendChild(li);
+							}
+						}else if(ul.className == 'mui-table-view mui-table-view-chevron cx2'){
+							count = 3;
+							var length = ul.querySelectorAll('li').length - 7;
+							var fragment = document.createDocumentFragment();
+							var li;
+							for (var i = 0; i < count; i++) {
+								li = document.createElement('li');
+								li.className = 'mui-table-view-cell mui-media';
+								a = document.createElement('a');
+								a.href = 'unpackage/res/YO-v203123.apk';
+								a.className = 'mui-navigate-right';
+								img = document.createElement('img');
+								img.className = 'mui-media-object mui-pull-left';
+								img.src = 'images/e1/e8.jpg';
+								div = document.createElement('div');
+								div.className = 'mui-media-body';
+								div.innerHTML = '『群聊吧（'+ (length + (reverse ? (count - i) : (i + 1)))+'）』';
+								p = document.createElement('p');
+								p.className = 'mui-ellipsis';
+								p.innerHTML = '聚合志同道合者的互动平台！';
+								div.appendChild(p);
+								a.appendChild(img);
+								a.appendChild(div);
+								li.appendChild(a);
+								fragment.appendChild(li);
+							}
+						}
+						return fragment;
+					};
+				});
+			})(mui);
+		</script>
+	</body>
+
+</html>

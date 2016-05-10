@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+    <head>
+        <title>心旅</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../images/ico.ico" type="image/x-icon" />
+        <meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1;" id="viewport" name="viewport" />
+        <!--离线应用的另一个技巧-->
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <!--指定的iphone中safari顶端的状态条的样式-->
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+        <!--告诉设备忽略将页面中的数字识别为电话号码-->
+        <meta content="telephone=no" name="format-detection" />
+        <!--设置开始页面图片-->
+        <!--<link rel="/touch/apple-touch-startup-image" href="startup.png" />-->
+        <!--在设置书签的时候可以显示好看的图标-->
+        <!--<link rel="apple-touch-icon" href="/touch/iphon_tetris_icon.png"/>-->
+        <link type="text/css" rel="stylesheet" href="template/css/com/com.css"/>
+				<script>var PX_HELP_DATA=['','uo74au74aqpc8801g3htt5l2v7',['touch','home','index'],'2014/04/09 09:12:46',0,false]; var DOMIN = {MAIN:"../m.paixie.com/",HELP:"../help.paixie.net/",TUAN:"../tuan.paixie.net/",WAP:"../wap.paixie.net/",UNION:"../union.paixie.net/",VIPSHOP:"../v.paixie.net/"};</script>  
+
+        <script>
+		
+			var JAVASCRIPT_LIB = (('\v' !== 'v') ? 'zepto' : 'jquery');
+			JAVASCRIPT_LIB="jquery";
+            document.write('<script src="http://ued.paixie.net/scripts/public/jquery.js"><\/script>');
+			
+			
+            DOMIN.MAIN = './';
+            // uc浏览器添加书签功能 
+           window.onmessage = function(event){
+                if(event.data.message != '')
+                {
+                    $('#otherPage').remove();
+                }else{
+                    $('#otherPage').show();
+                }
+            }
+        </script>
+        <script src="template/js/com/com.js"></script>
+        <script src="http://ued.paixie.net/scripts/public/px-verify.js"></script>
+        <script src="template/js/com/template.js"></script>
+		<!--<script src="/template/js/com/jquery.snow.min.js"></script>
+		<script>
+		$(document).ready( function(){
+			$.fn.snow({ 
+				minSize: 5, 
+				maxSize: 50, 
+				newOn: 1000
+			});
+		});
+		</script>-->
+    </head>
+    <body>
+        <!-- uc 浏览器添加书签 start --->
+        <iframe src="http://app.uc.cn/appstore/AppCenter/frame@uc_param_str=nieidnutssvebipfcp&api_ver=2.0&id=1904" width="100%" height="160" style="display:none"  id="otherPage"></iframe>
+        <!-- uc 浏览器添加书签 end  ---->
+       
+        <div class="com-content">
+             					<script>
+                           
+                        function open_notice(id){
+                            setCookie('touch_notice_close',1);
+                            var url = 'new/info/'+id+'.html';
+                            window.location.href=url;
+                        }   
+                           
+                        var touch_notice_close = getCookie('touch_notice_close');
+                        if(touch_notice_close == '1' && typeof(document.getElementById('js-com-notification2')) != 'undefined' && document.getElementById('js-com-notification2') != null){
+                            document.getElementById('js-com-notification2').style.display = 'none';
+                        }
+			//if( document.cookie.match(new RegExp("(^| )PHPSESSID=([^;]*)(;|$)")) ){
+			  //  document.getElementById('js-com-notification').style.display = 'none';
+		//	}
+			</script>
+            <div class="com-header-area" id="js-com-header-area">
+                <a href="../index.html" class="com-header-logo"></a>
+				<dfn></dfn>
+                <p>
+                    <a class="com-header-search" id="js-com-header-search"><del></del></a>
+                </p>
+				<div class="clear"></div>
+                <form action="/s.php" method="post">
+                    <strong>
+                        <input type="text" name="keyword" id="js-com-search-text" value=""/>
+                        <input type="submit" value=" "/>
+                    </strong>
+                    <div id="js-com-search-recommend">
+                        <div></div>
+                                                <a href="#"  style="color:#000000	">最便宜</a>
+                                                <a href="#"  style="color:#ed1749">最热销</a>
+                                                <a href="#"  style="color:#000000">被闲置</a>
+                         
+                    </div>
+                </form>
+            </div>
+            <div class="com-content-area" id="js-com-content-area">
+                <!--content-->
+              			  <script type="text/javascript">
+    $(function(){
+        $('.pxui-show-more').first().find('a').click();  
+        $('.pxui-show-more').last().find('a').click();  
+    });
+</script>
+<div class="page-role home-page">
+	<link type="text/css" rel="stylesheet" href="template/css/home/index.css"/>
+	<script src="template/js/com/jquery.touchslider.min.js"></script>
+	<script src="template/js/home/index.js"></script>
+<script>
+jQuery(function($) {
+	$(window).resize(function(){
+		var width=$('#js-com-header-area').width();
+		$('.touchslider-item a').css('width',width);
+		$('.touchslider-viewport').css('height',300*(width/640));
+	}).resize();	
+	$(".touchslider").touchSlider({mouseTouch: true, autoplay: true});
+});
+</script>	
+	
+<div class="touchslider">
+    <div class="touchslider-viewport">
+				<div class="touchslider-item"><a href="#"><img src="http://img-cdn2.paixie.net/newspic/20140408/1396940354243f5b.jpg" style="vertical-align:top;"/></a></div>
+				<div class="touchslider-item"><a href="#"><img src="http://img-cdn2.paixie.net/newspic/20140328/1395970986accb4f.jpg" style="vertical-align:top;"/></a></div>
+				<div class="touchslider-item"><a href="#"><img src="http://img-cdn2.paixie.net/newspic/20140331/1396235117d367d2.jpg" style="vertical-align:top;"/></a></div>
+				<div class="touchslider-item"><a href="#"><img src="http://img-cdn2.paixie.net/newspic/20140401/13963430797a3567.jpg" style="vertical-align:top;"/></a></div>
+				<div class="touchslider-item"><a href="#"><img src="http://img-cdn2.paixie.net/newspic/20140404/139657373135668e.jpg" style="vertical-align:top;"/></a></div>
+				<div class="touchslider-item"><a href="#"><img src="http://img-cdn2.paixie.net/newspic/20140331/13962355233033ac.jpg" style="vertical-align:top;"/></a></div>
+		    </div>
+    <div class="touchslider-navtag">
+				<span class="touchslider-nav-item touchslider-nav-item-current"></span>
+				<span class="touchslider-nav-item "></span>
+				<span class="touchslider-nav-item "></span>
+				<span class="touchslider-nav-item "></span>
+				<span class="touchslider-nav-item "></span>
+				<span class="touchslider-nav-item "></span>
+		    </div>
+</div>
+
+	<div class="pxui-tab pxui-tab-nav pxui-tab-no-top">
+                <a class="selected"><i></i>首页<span></span></a>
+		<a href="category/default.htm"><i></i>分类<span></span></a>
+		<a href="brand/default.htm"><i></i>闲置<span></span></a>
+		<span></span>
+                <a href="#"><i></i>我的足迹<span></span></a>
+        
+	</div>
+	<div class="tags" style="height: 100%;">
+		<table border="0" cellspacing="3" cellpadding="0">
+			<tr>
+				<td colspan="2"><a href="help/app.html"><i></i>心旅APP<br/>总能找到你的至爱</a></td>
+				<td colspan="2"><a href="help/weixin.html">心旅微信<br/>你的随身好帮手<i></i></a></td>
+			</tr>
+		</table>
+	</div>
+        
+        	
+	<div class="pxui-area">
+		<h3><b>Top5</b> 二手推荐<a class="pxui-button" href="#"><span>+</span> 更多 &gt;&gt;</a></h3>
+		<div class="pxui-shoes">
+			<div>
+                                                            <a href="#">
+                                  
+					<div class="img160"><dfn></dfn><img src="sj.jpg" truesrc=""/></div>
+					<span class="name">三星G3手机</span>
+					<span class="price">出手￥2159.00<del class="price">入手￥3339.00</del></span>
+					
+                                        <span class="tag">1</span>
+									</a>
+                                                      <a href="#">
+                                  
+					<div class="img160"><dfn></dfn><img src="cd.jpg" truesrc=""/></div>
+					<span class="name">高音质CD机</span>
+					<span class="price">出手￥269.00<del class="price">入手￥559.00</del></span>
+					
+                                        <span class="tag">2</span>
+									</a>
+                        
+			</div>
+		</div>
+		<div class="pxui-list">
+			<a href="#"><span class="pxui-bg-blue pxui-color-white">3</span><p>休闲蓝色钓鱼竿</p><b>出手￥179.00</b></a>
+			<a href="#"><span class="pxui-bg-blue pxui-color-white">4</span><p>三星32G U盘</p><b>出手￥49.00</b></a>
+			<a href="#"><span class="pxui-bg-blue pxui-color-white">5</span><p>小米 Note 粉色手机保护壳</p><b>出手￥68.00</b></a>
+</div>
+	</div>
+
+</div>
+<script type="text/tcl" id="js-bk-template">
+				<a href="<%=data.link%>">
+					<div class="img160"><dfn></dfn><img src="http://img-cdn2.paixie.net/images/empty.gif" goodsrc="<%=data.img%>"/></div>
+					<span class="name"><%=data.title%></span>
+					<span class="price">￥<%=data.price%></span>
+					<del class="price">￥<%=data.market_price%></del>
+                                        <%if(data.tag == ''){%>
+					<img class="tag" src="http://img-cdn2.paixie.net/images/empty.gif" goodsrc="<%=data.tag%>"/>
+                                        <%}%>
+				</a>
+</script>
+<script type="text/tcl" id="js-brand-template">
+    <a href="<%=data.mlink%>"><i><img src="template/images/public/empty-2X1.gif" truesrc="<%=data.logo%>" alt="<%=data.alt%>" width="100" height="50"/></i></a>
+</script>
+<!--content-end-->
+		</div>
+                		
+                	</div>
+<script type="text/tcl" id="js-good-template">
+<a href="<%=data.link;%>">
+	<div class="img160"><dfn></dfn><img src="http://img-cdn2.paixie.net/images/empty.gif" goodsrc="<%=data.img;%>"/></div>
+	<span class="name"><%=data.name;%></span>
+	<span class="price">￥<%=data.price;%></span>
+	<del class="price">￥<%=data.oldprice;%></del>
+	<%if(data.tag){%>
+	<img class="tag" src="http://img-cdn2.paixie.net/images/empty.gif" truesrc="<%=data.tag;%>"/>
+	<%}%>
+</a>
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45921315-2', 'paixie.net');
+  ga('send', 'pageview');
+
+</script>
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F188d758416f87a421ba1c700763fa0bf' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+</html>
