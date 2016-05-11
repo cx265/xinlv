@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>心旅</title>
+		<link rel="shortcut icon" href="images/ico.ico" type="image/x-icon" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/cx_style.css" />
+		<link rel="stylesheet" type="text/css" href="css/feedback-page.css" />
+		<style type="text/css">
+			body {
+				font-family: "微软雅黑";
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--带有侧滑菜单的框架-->
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="title">
+							<img class="mui-media-object mui-pull-left" src="images/face.png">
+							<div class="mui-media-body">
+								<p>东方紫竹</p>
+								<p></p>
+								<p class='mui-ellipsis'>
+									&nbsp;我在心旅上结识了一个好朋友！
+								</p>
+							</div>
+						</div>
+						<div id="wei" class="title" style="margin-bottom: 25px;">
+							<span class="mui-badge mui-badge-danger">VIP4</span>
+							<a class="active"><span class="mui-icon mui-icon-weixin"></span></a>
+							<a class="active"><span class="mui-icon mui-icon-weibo"></span></a>
+						</div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted module1">
+							<li class="mui-table-view-cell module1">
+								<a href="#" class="mui-navigate-right">
+									享学习
+								</a>
+							</li>
+							<li class="mui-table-view-cell module2">
+								<a class="mui-navigate-right">
+									享旅途
+								</a>
+							</li>
+							<li class="mui-table-view-cell module3">
+								<a class="mui-navigate-right">
+									享生活
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<!--主界面部分-->
+			<div class="mui-view mui-inner-wrap">
+				<!--顶部菜单-->
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left">
+					</a>
+					<h1 class="mui-title">
+						心旅
+					</h1>
+					<a id="menu" class="mui-action-menu mui-icon mui-icon-bars mui-pull-right" href="#topPopover">
+					</a>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<!--内容 body-->
+					<div class="mui-content">
+						<div id="cx_tabbar1" class="mui-control-content mui-active">
+							<div id="slider" class="mui-slider">
+								<div class="mui-slider-group mui-slider-loop">
+									<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+									<div class="mui-slider-item mui-slider-item-duplicate">
+										<a href="#">
+											<img src="images/jiaodian1.jpg">
+										</a>
+									</div>
+									<!-- 第一张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="images/jiaodian2.jpg">
+										</a>
+									</div>
+									<!-- 第二张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="images/jiaodian3.jpg">
+										</a>
+									</div>
+									<!-- 第三张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="images/jiaodian4.jpg">
+										</a>
+									</div>
+									<!-- 第四张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="images/jiaodian1.jpg">
+										</a>
+									</div>
+									<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+									<div class="mui-slider-item mui-slider-item-duplicate">
+										<a href="#">
+											<img src="images/jiaodian2.jpg">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div style="margin-top: 15px;" class="module1">
+								<ul class="mui-table-view mui-grid-view">
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 module1">
+										<a href="#"><img class="mui-media-object" src="images/nav1.png">
+											<div class="mui-media-body">享学习</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 module2">
+										<a href="#"><img class="mui-media-object" src="images/nav2.png">
+											<div class="mui-media-body">享旅途</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 module3">
+										<a href="#"><img class="mui-media-object" src="images/nav3.png">
+											<div class="mui-media-body">享生活</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="cx_tabbar3" class="mui-control-content">
+							<ul class="mui-table-view mui-table-view-chevron">
+								<li class="mui-table-view-cell mui-media">
+									<a class="mui-navigate-right mui-tab-item mui-control-content" href="#account">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="images/face.png">
+										<div class="mui-media-body">
+											Hello 东方紫竹
+											<p class='mui-ellipsis'>
+												账号:cx265
+											</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<ul class="mui-table-view mui-table-view-chevron">
+								<li class="mui-table-view-cell">
+									<a href="#notifications" class="mui-navigate-right mui-tab-item">
+										新消息通知
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="#privacy" class="mui-navigate-right mui-tab-item">
+										隐私
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="#general" class="mui-navigate-right mui-tab-item">
+										通用
+									</a>
+								</li>
+							</ul>
+							<ul class="mui-table-view mui-table-view-chevron">
+								<li class="mui-table-view-cell">
+									<a href="#about" class="mui-navigate-right mui-tab-item">
+										心旅 <i class="mui-pull-right update">V1.0</i>
+									</a>
+								</li>
+							</ul>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell" style="text-align: center;">
+									<a id="confirmBtn">
+										退出登录
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div id="account" class="mui-control-content">
+
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<a id="head" class="mui-navigate-right">
+										头像
+										<span class="mui-pull-right head">
+											<img class="head-img mui-action-preview" id="head-img1" src="images/face.png"/>
+										</span>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a>
+										姓名<span class="mui-pull-right">陈璇</span>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a>
+										邮箱账号<span class="mui-pull-right">chenx265@163.com</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<a>
+										QQ号<span class="mui-pull-right">1224603766</span>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a>
+										手机号<span class="mui-pull-right">13588326202</span>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a>
+										微信号<span class="mui-pull-right">cx12246037660</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div id="notifications" class="mui-control-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<a>
+										接收新消息通知<span class="mui-pull-right">已开启</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									通知显示消息详情
+									<div class="mui-switch mui-active mui-switch-mini">
+										<div class="mui-switch-handle">
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="mui-content-padded">
+								<p>
+									若关闭，当收到新消息时，通知提示将不显示消息内容摘要
+								</p>
+							</div>
+							<ul class="mui-table-view mui-table-view-chevron">
+								<li class="mui-table-view-cell">
+									<a href="#notifications_disturb" class="mui-navigate-right mui-tab-item">
+										功能消息免打扰
+									</a>
+								</li>
+							</ul>
+							<div class="mui-content-padded">
+								<p>
+									设置系统功能消息提示声音和震动的时段
+								</p>
+							</div>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									声音
+									<div class="mui-switch mui-active mui-switch-mini">
+										<div class="mui-switch-handle">
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									震动
+									<div class="mui-switch mui-active mui-switch-mini">
+										<div class="mui-switch-handle">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div id="notifications_disturb" class="mui-control-content">
+							<h1 class="mui-center mui-title">
+								功能消息免打扰
+							</h1>
+							<ul class="mui-table-view mui-table-view-radio">
+								<li class="mui-table-view-cell mui-selected">
+									<a class="mui-navigate-right">
+										开启
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										只在夜间开启
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										关闭
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div id="privacy" class="mui-control-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-divider">
+									通讯录
+								</li>
+								<li class="mui-table-view-cell">
+									加我为朋友时需要验证
+									<div class="mui-switch mui-active mui-switch-mini">
+										<div class="mui-switch-handle">
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									通过心旅账号搜索到我
+									<div class="mui-switch mui-active mui-switch-mini">
+										<div class="mui-switch-handle">
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									通过QQ号搜索到我
+									<div class="mui-switch mui-switch-mini">
+										<div class="mui-switch-handle">
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									通过微信号搜索到我
+									<div class="mui-switch mui-switch-mini">
+										<div class="mui-switch-handle">
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-divider">
+									关闭后，其他用户将不能通过相关账号搜索到你
+								</li>
+							</ul>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									向我推荐通讯录朋友
+									<div class="mui-switch mui-switch-mini">
+										<div class="mui-switch-handle">
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-divider">
+									开启后，为你推荐已经注册心旅的手机联系人
+								</li>
+							</ul>
+						</div>
+						<div id="general" class="mui-control-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									多语言
+								</li>
+							</ul>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									听筒模式
+									<div class="mui-switch mui-switch-mini">
+										<div class="mui-switch-handle">
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									功能
+								</li>
+							</ul>
+						</div>
+						<div id="about" class="mui-control-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-plus-visible">
+									<a id="rate" class="mui-navigate-right">
+										评分鼓励
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-plus-visible">
+									<a id="welcome" class="mui-navigate-right">
+										欢迎页
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-plus-visible">
+									<a id="share" class="mui-navigate-right">
+										分享推荐
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a id="tel" class="mui-navigate-right">
+										客服电话
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a id="feedback-btn" href="#feedback" class="mui-navigate-right mui-tab-item">
+										问题反馈
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-plus-visible">
+									<a id="update" class="mui-navigate-right">
+										检查更新
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div id="feedback" class="mui-control-content feedback mui-control-content feedback">
+							<div class="mui-page-content">
+								<p>
+									问题和意见
+								</p>
+								<div class="row mui-input-row">
+									<textarea id='question' class="mui-input-clear question" placeholder="请详细描述你的问题和意见..."></textarea>
+								</div>
+								<p>
+									图片(选填,提供问题截图)
+								</p>
+								<div id='image-list' class="row image-list">
+								</div>
+								<p>
+									QQ/微信/邮箱
+								</p>
+								<div class="mui-input-row">
+									<input id='contact' type="text" class="mui-input-clear  contact" placeholder="(选填,方便我们联系你 )" />
+								</div>
+								<button id='submit' type="button" class="mui-btn mui-btn-green">
+									提交
+								</button>
+							</div>
+						</div>
+					</div>
+					<!--内容 body end-->
+					<!--底部菜单-->
+					<nav class="mui-bar mui-bar-tab module0">
+						<a class="mui-tab-item mui-active" href="#cx_tabbar1">
+							<span class="mui-icon mui-icon-home"></span>
+							<span class="mui-tab-label">首页</span>
+						</a>
+						<a class="mui-tab-item module0" href="address.html">
+							<span class="mui-icon mui-icon-contact"></span>
+							<span class="mui-tab-label">通讯录</span>
+						</a>
+						<a class="mui-tab-item" href="#cx_tabbar3">
+							<span class="mui-icon mui-icon-gear"></span>
+							<span class="mui-tab-label">设置</span>
+						</a>
+					</nav>
+				</div>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+			<!--主界面部分end-->
+		</div>
+		<!--框架end-->
+		<!--右上角弹出菜单-->
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow">
+			</div>
+			<div class="mui-scroll-wrapper" style="height: 310px;" data-scroll="1">
+				<div class="mui-scroll" style="transform: translate3d(0px, -5px, 0px) translateZ(0px);">
+					<ul class="mui-table-view cx_top_nav">
+						<li class="mui-table-view-cell">
+							<a href="#">
+								<span class="mui-icon mui-icon-camera"></span> 扫一扫
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">
+								<span class="mui-icon mui-icon-personadd"></span> 加好友
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">
+								<span class="mui-icon mui-icon-minus"></span> 收付款
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">
+								<span class="mui-icon mui-icon-upload"></span> 传文件
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">
+								<span class="mui-icon mui-icon-chatboxes"></span> 发说说
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">
+								<span class="mui-icon mui-icon-chat"></span> 群聊
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">
+								<span class="mui-icon mui-icon-help"></span> 帮助
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-scrollbar mui-scrollbar-vertical">
+					<div class="mui-scrollbar-indicator" style="transition-duration: 0ms; display: none; height: 8px; transform: translate3d(0px, -8px, 0px) translateZ(0px);">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.view.js "></script>
+		<script src='libs/easymob-webim-sdk/jquery-1.11.1.js'></script>
+		<script src='libs/easymob-webim-sdk/strophe-custom-2.0.0.js'></script>
+		<script src='libs/easymob-webim-sdk/json2.js'></script>
+		<script src="libs/easymob-webim-sdk/easemob.im-1.0.5.js"></script>
+		<script src='js/feedback.js'></script>
+		<script src="js/feedback-page.js"></script>
+		<script type="text/javascript" src="js/cx_style.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false //启用右滑关闭功能
+			});
+			var cx_slider = mui("#slider");
+			cx_slider.slider({
+				interval: 2000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+			document.getElementById("confirmBtn").addEventListener('tap', function() {
+				var btnArray = ['是', '否'];
+				mui.confirm('确认要退出吗？', '你好', btnArray, function(e) {
+					if (e.index == 0) {
+						mui.toast('退出成功');
+						window.open("index.html");
+					} else {
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>
